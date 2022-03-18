@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+	<head>
+		
+		<title>Juan’s Mexican Street Food</title>
+		<script src="MyJavaScriptFile.js" ></script>
+		<meta charset="UTF-8">
+		<style> body {background-color: lightblue;
+				}
+		</style>
+	</head>
+	
+	<body>
+	<h1 style="color:orange; text-align:center;">Welcome to Juan’s Mexican Street Food</h1>
+		<form name="myForm" onsubmit="validateName()">
+		<table>
+			<tr>
+				<td><label class="form_labels">Username(e-mail):</label></td>
+				<td><input type="text" name="username" method="post" /></td>
+			</tr>
+			
+			<tr>
+				<td><label class="form_labels">Password:</label></td>
+				<td><input name= "password" type="password" maxlength="11"/></td>
+			</tr>
+			<tr>
+				<td><p id="p1" style="color:purple; font-family:cursive">Click me to sign in</td>
+				<td><input type="image" width="100" src="1.png" alt="submit" onclick="validatePass()" /></td>
+			</tr>
+			
+			
+			
+			<tr>
+				<td><label class="form_labels">How Many?:</label></td>
+				<td><input id="numb" /></td>
+				<td><button type="button" onclick="myFunction()">Check Number</button></td>
+			</tr>
+				
+			<tr>
+				<td><label class="form_labels">Discount Code Here:</label></td>
+				<td><input size="18" id="disc"/></td>
+				<td><button type="button" style="float:right;" onclick="myDiscount()">Check Code</button></td>
+			</tr>
+			<tr>
+				<td><label class="form_labels">Size:</label></td>
+				<td>
+					<select id = "Size" onchange="choice3(this)">
+						<option value = “large”>Large (5 €)</option>
+						<option value = “large”>Extra-Large(7.5 €)</option>
+						<option value = “large”>Supersize(17 €)</option>
+					</select>
+				</td>
+				<td><button style="float:right;" type="button" >**Order**</button></td>
+			</tr>
+		</table>
+		</form>		
+	</body>
+
+</html>
